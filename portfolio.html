@@ -2,78 +2,100 @@
 
 <head>
     <title>About Us </title>
-  
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+   
+   
 
 
-</head>
+
 <style>
+    *{
+         margin: 0rem;
+         padding: 0rem; 
+        
+    }
     body {
-        box-sizing: border-box;
+             box-sizing: border-box; 
 
         background-image: url(pbg.jpg);
         background-repeat: no-repeat;
         background-position: center;
     }
-
-    img {
-
-        border-radius: 50%;
-        box-shadow: 1px 2px 10px 5px black;
-
+    .navbar-brand{
+        font-size: 1.3rem ;
     }
-
     .nav-item {
-        padding: 0px 10px 0px 10px;
+        padding: 0rem 0.6rem 0rem 0.6rem;
+        font-size: 1rem ;
+        text-align: center;
     }
-
     .nav-item:hover {
         background: rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 10px gray;
+        box-shadow: 0.12rem 0.12rem 0.6rem gray;
         background-color: transparent;
-        border-radius: 10px;
+        border-radius: 0.6rem;
         /* transform: rotateY(180deg); */
         transform: rotateY(360deg);
         transition: 2s;
     }
 
+    img {
+
+        border-radius: 50%;
+        box-shadow: 1rem 0.5rem 2rem 0.5rem black;
+
+    }
+
+    
+
+   
+
     .col-md-5 {
 
         text-align: center;
-        margin-top: 200px;
+        margin-top: 12rem;
         border-image: round;
     }
 
     .col-md-7 {
-
-        text-align: justify;
-        margin-top: 200px;
-        margin-left: -10%;
+        margin-top: 12rem; 
+        font-size: 12rem ;
+        font-weight: 10rem;
+        text-align: center;
+        align-items: center;
+        /* margin-left: -10%; */
     }
 
-    h2 {
-        font-style: oblique;
+   h2{
+        color: black;
     }
 
-    h4 {
+     h4 {
         font-style: oblique;
-        font-weight: lighter;
+        font-weight: 0.2rem;
+    }
+    @media (max-width:768px){
+        .col-md-7{
+            margin-top: 5rem;
+        }
     }
 </style>
-
+</head>
 <body>
 
     <div class="container">
 
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,7 +122,7 @@
         </nav>
         <div class="row">
             <div class="col-md-5">
-                <img src="self.jpg" style="width: 200px;">
+                <img src="self.jpg" style="width: 12rem;">
             </div>
             <div class="col-md-7">
 
@@ -118,7 +140,7 @@
 
 
 
-
+   
 </body>
 
 </html>

@@ -2,12 +2,14 @@
 
 <head>
     <title> INTEREST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
     * {
         padding: 0;
         margin: 0;
         font-family: sans-serif;
+        font-size: 6.25%;
 
     }
 
@@ -17,7 +19,7 @@
 
     .h {
         text-align: center;
-        position: absolute;
+        /* position: absolute; */
         width: 100%;
     }
 
@@ -32,8 +34,8 @@
 
     .heading {
         color: yellow;
-        font-weight: 400px;
-        font-size: 60px;
+        font-weight: 400rem;
+        font-size: 60rem;
         position: relative;
         text-decoration: underline;
         animation: text2 3s 1;
@@ -47,10 +49,10 @@
 
     .text1 {
         color: white;
-        font-size: 60px;
-        font-weight: 400px;
-        letter-spacing: 3px;
-        margin-bottom: 20px;
+        font-size: 60rem;
+        font-weight: 400rem;
+        letter-spacing: 3rem;
+        margin-bottom: 20rem;
         background: transparent;
 
         position: relative;
@@ -62,30 +64,38 @@
     @keyframes text {
         0% {
             color: black;
-            margin-bottom: -80px;
+            margin-bottom: -80rem;
             /* transform: rotateY(360deg); */
-            box-shadow: 0 0 10px red, 0 0 20px yellow;
+            box-shadow: 0 0 10rem red, 0 0 20rem yellow;
         }
 
         85% {
-            /* letter-spacing: 8px; */
+            /* letter-spacing: 8rem; */
             /* transform: rotateZ(360deg); */
-            box-shadow: 0 0 10px blue, 0 0 40px yellow, 0 0 80px white;
-            margin-bottom: -10px;
+            box-shadow: 0 0 10rem blue, 0 0 40rem yellow, 0 0 80rem white;
+            margin-bottom: -10rem;
         }
 
     }
 
     @keyframes text2 {
         0% {
-            margin-bottom: -80px;
+            margin-bottom: -80rem;
 
         }
 
         85% {
-            letter-spacing: 50px;
+            letter-spacing: 50rem;
             transform: rotateX(360deg)
         }
+    }
+    @media(max-width : 768 px){
+        .heading{
+            display: flex;
+            color: blue;
+            font-style: italic;
+        }
+
 
     }
 </style>
