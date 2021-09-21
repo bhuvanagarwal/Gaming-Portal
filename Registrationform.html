@@ -1,0 +1,206 @@
+<!Doctype html>
+
+<head>
+    <title>Registration form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            background-image: url(bg.png);
+            background-size: cover;
+            /* background-attachment: scroll; */
+            /* background-repeat: no-repeat; */
+        }
+
+        h1 {
+            font-size: 40px;
+            color: black;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+            font-weight: bolder;
+            margin-top: 250px;
+        }
+
+        p {
+            color: aliceblue;
+            font-size: 20px;
+            text-shadow: 0 0 5px #f80303, 0 0 10px #0f0bfaef;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: aliceblue;
+            font-size: 25px;
+        }
+
+        .gg {
+            font-size: 50px;
+            color: white;
+            float: right;
+            margin-top: 20px;
+
+        }
+
+        .col-md-5 {
+            margin-top: 80px;
+            box-shadow: -1px 1px 10px 10px grey;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+
+        .label {
+            font-weight: normal;
+            margin-top: 15px;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .form-control {
+            background: transparent;
+            border-radius: 3px;
+            border: 0px;
+            border-bottom: 1px solid white;
+            font-size: 18px;
+            margin-top: 15px;
+            height: 40px;
+            color: white;
+        }
+
+        input[type="radio"] {
+            margin-top: 22px;
+            color: white;
+            font-size: 15px;
+            font-weight: normal;
+
+        }
+
+        small {
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+
+        }
+
+        option {
+            color: gray;
+
+        }
+
+        button {
+            margin-top: 10px;
+            margin-left: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-left"> WELCOME TO GAMING WORLD</h1>
+                <p class="text-left"> A DEDICATED PLACE FOR CHAMPIONS ONLY !</p>
+
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-left">Registration Form </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="gg"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="label col-md-4 control-label">First Name</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="fname" placeholder="Enter your First Name here">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-4 control-label">Last Name</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="lname" placeholder="Enter your Last Name here">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-4 control-label">E-mail</label>
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" name="email" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-4 control-label">Gender</label>
+                    <div class="col-md-8">
+                        <input type="radio" name="gn" value="Male"><small> Male</small>
+                        <input type="radio" name="gn" value="Female"><small>Female</small>
+                        <input type="radio" name="gn" value="Other"><small>Other</small>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="label col-md-4 control-label">Date Of Birth</label>
+                    <div class="col-md-8">
+                        <input type="date" class="form-control" name="dob" placeholder="DOB">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-4 control-label">Country</label>
+                    <div class="col-md-8">
+                        <select class="form-control">
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>Bangladesh</option>
+                            <option>Brazil</option>
+                            <option>Canada</option>
+                            <option>Turkey</option>
+                            <option>Indonesia</option>
+                            <option>Nepal</option>
+                            <option>Taiwan</option>
+
+                        </select>
+
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted" style="margin-top: 44px;">
+
+
+
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright: Bhuvan Agarwal
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+
+
+</html>
